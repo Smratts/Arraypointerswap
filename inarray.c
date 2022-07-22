@@ -15,6 +15,7 @@ int main()
 	scanf("%d",&k); // new element k is read
 	printf("enter the location l were to insert the new element :"); 
 	scanf("%d",&l); // addres of location
+
 	//logic to shift the existing location 
 	for(i=n-1;i>=l;i--)  // we will shift all the eliments by one location as we are inserting one new element 
                                // for(i=n-1;i>=l;i--) n=6,l=2, i--
@@ -22,12 +23,6 @@ int main()
 		a[i+1]=a[i]; 
         }
 		a[l]=k;
-	
-	/*
-	   for(i=m-1;i>=l;i--)
-	   {
-	   a[i+n]=a[i];
-	   }*/
 
 	for (i=0;i<n;i++)
 	{
@@ -35,5 +30,13 @@ int main()
 	}
 }
 
-
+/*enter the number of elements in array size : 5
+enter elements into array :10
+20
+30
+40
+50
+enter the new element to insert Keyelement :100
+enter the location l were to insert the new element :2
+10 20 100 30 40 */
 
